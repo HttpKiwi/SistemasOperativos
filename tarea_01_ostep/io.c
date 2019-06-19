@@ -28,10 +28,12 @@ int main(int argc, char *argv[]) {
     if(exists(fname)){
 	printf("holi, existo");
 	fseek(file,0,SEEK_END);
-	for(pos = ftell(file)-1; pos >-1; pos--){ //Desde la ultima posicion hasta la primera
-		fseek(file, pos, SEEK_SET); //Se ubica en la posicion pos
-		c = fgetc(file); //Retorna el siguiente caracter y lo guarda
-		printf("%c", c); //Se imprime
+	pos = ftell(file)-1;
+	while(pos >-1){ 
+		fseek(file, pos, SEEK_SET);
+		c = fgetc(file); 
+		printf("%c", c);
+		pos--;
 	
 	}printf("\n");
     } else printf("el archivo no existe");
