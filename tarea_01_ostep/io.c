@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
     long pos;
 
     if(exists(fname)){
-	printf("holi, existo");
+
 	fseek(file,0,SEEK_END);
 	pos = ftell(file)-1;
 	while(pos >-1){ 
