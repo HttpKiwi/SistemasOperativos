@@ -8,7 +8,8 @@ int main(int argc, char** argv){
 	pid_t pid;
 	pid = fork();
 	if(pid == 0){
-		printf("Hola, soy el hijo y mi id es %d\n",(int) getpid());
+		int w = wait(NULL);
+		printf("Hola, soy el hijo y mi id es %d\n Espero a que %d termine.\n",(int) getpid(),w);
 	}
 	else{
 		x = wait(NULL);
