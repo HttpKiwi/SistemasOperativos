@@ -24,13 +24,14 @@ int main(int argc, char *argv[]) {
 	char* p = strtok(path,":");
 
 	while(p != NULL){
-	printf("%s\n",p);
+		//printf("%s\n",p);
 		if(strcmp(p,file) == 0){
 		        char *args[]={p,NULL};
 			printf("%s\n",p);
-			//execvp(args[0],args[1]);
+			//char* const f = p;
+			//execv(f,args[1]);
 		}
+	p = strtok(NULL,":");
 	}
-	p = strtok(p,":");
 	return 0;
 }
