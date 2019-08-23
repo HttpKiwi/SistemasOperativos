@@ -1,0 +1,1 @@
+{"virtualbox":{"/tmp":{"guestpath":"/tmp","hostpath":"/home/invitado/SistemasOperativos/2019_08_23/synced","disabled":false,"__vagrantfile":true},"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/home/invitado/SistemasOperativos/2019_08_23/synced/www","disabled":false,"__vagrantfile":true}}}
