@@ -1,8 +1,9 @@
 A continuación, se hará una guía sobre los pasos que se llevaron a cabo para
-conseguir llevar a cabo las tareas de Docker; acompañados de explicaciones 
+conseguir llevar desarrollar de Docker; acompañados de explicaciones 
 breves y consisas. 
 
-##7 puntos: 
+## 7 puntos:
+ 
 1. docker run -it ubuntu 
 2. *se copia el id del contenedor al que ingresa*
 3. *se sale del contenedor* (exit) 
